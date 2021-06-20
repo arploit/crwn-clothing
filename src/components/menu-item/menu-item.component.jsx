@@ -2,7 +2,6 @@ import React from 'react';
 import './menu-item.css';
 
 const MenuItem = (props) => {
-	console.log(props.tittle, 'props');
 	return (
 		<div className={`${props.size} menu-item`}>
 			<div
