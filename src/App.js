@@ -10,6 +10,7 @@ import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.components';
 import Header from './components/header/header.components';
 import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.components';
+import CheckoutPage from './pages/checkout/checkout.components';
 
 // FIREBASE
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
@@ -53,6 +54,7 @@ class App extends Component {
 							this.props.currentUser ? <Redirect to="/" /> : <SignInAndSignUp />
 						}
 					/>
+					<Route exact path="/checkout" component={CheckoutPage} />
 				</Switch>
 			</div>
 		);
